@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  transition: all .25s cubic-bezier(.21,1,.22,1);
+}
+
+/* Soft Neon Glow */
+.glow {
+  box-shadow: 0 20px 40px rgba(99,102,241,.25);
+}
+
+/* Glass Effect */
+.glass {
+  background: rgba(255,255,255,.7);
+  backdrop-filter: blur(18px);
+}
+
+/* Floating Animation */
+.float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%,100% { transform: translateY(0px); }
+  50%     { transform: translateY(-14px); }
+}
+
+/* Parallax Layer */
+.parallax {
+  will-change: transform;
+}
+
+/* Magnetic hover */
+.magnetic {
+  transition: transform .2s ease-out;
+}
+.magnetic:hover {
+  transform: translateY(-2px) scale(1.02);
+}
+
